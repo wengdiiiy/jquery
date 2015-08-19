@@ -1,6 +1,6 @@
 # jquery
 
-<h1>목차</h1>
+<h2>목차</h2>
 <ol>
 	<li>흔한 제이쿼리란?</li>
 	<li>지금 바로 사용해보자.</li>
@@ -16,7 +16,7 @@
 	<li>마치며.</li>
 </ol>
 
-<h1>링크</h1>
+<h2>링크</h2>
 <ul>
 	<li><a href="http://jquery.com" target="_blank">제이쿼리 홈페이지</a></li>
 	<li><a href="http://oscarotero.com/jquery" target="_blank">제이쿼리 버전 별 변동사항</a></li>
