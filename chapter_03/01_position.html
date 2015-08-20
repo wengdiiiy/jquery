@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>스크립트 사용 위치</title>
+
+	<script>alert("head");</script>
+	<script src="../javascript/01_position_01.js"></script>
+
+	<script>console.log( "제이쿼리 로드전에 사용할 경우", $("span") );</script>
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>console.log( "헤드에서 바로 사용할 경우", $("span") );</script>
+
+</head>
+<body>
+
+	<span>Span Element</span>
+
+	<script src="../javascript/01_position_02.js"></script>
+	<script>alert("body");</script>
+
+	<script>console.log( "바디 하단에서 사용할 경우", $("span") );</script>
+
+</body>
+</html>
