@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>스크립트 사용 위치</title>
+</head>
+<body>
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+		$(document).on("ready", function() {
+			alert("A");
+		});
+		$(document).on({ready: function() {
+			alert("B");
+		}});
+		$(document).ready(function() {
+			alert("C");
+		});
+		$(function() {
+			alert("D");
+		});
+	</script>
+
+</body>
+</html>
