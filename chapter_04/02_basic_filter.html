@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>기본 필터 선택</title>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<ul class="list">
+			<li>목록 1</li>
+			<li>목록 2</li>
+			<li>목록 3</li>
+			<li>목록 4</li>
+			<li class="last">목록 5</li>
+		</ul>
+
+	</div>
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+
+		$("li:eq(1)").css("color", "red");
+		$("li:eq(-1)").css("color", "blue");
+
+		$("li:even").css("background-color", "yellow");
+
+		$("li:gt(2)").css("text-decoration", "underline");
+
+		$("li:not(:first)").css("font-weight", "bold");
+
+	</script>
+
+</body>
+</html>
