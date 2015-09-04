@@ -41,7 +41,15 @@
 
 		$("#korea").children("li").last().css("text-decoration", "underline");
 
-		console.log( $("#korea").children("li").has("#kangwon") );
+		$("li").has("ul").css("border", "dotted 1px");
+
+		console.log( $("#seoul").parent().is("#korea") );
+
+		$("#seoul").find("li").map(function(i, e){
+			console.log(i, e);
+		});
+
+		$("#korea").children("li").slice(1,5).css("color", "gray");
 	</script>
 
 </body>
