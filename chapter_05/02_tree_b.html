@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>트리 탐색 (형제)</title>
+</head>
+<body>
+
+	<div>
+		<ul id="korea">
+			<li id="seoul">서울/경기
+				<ul>
+					<li>강남</li>
+					<li class="sib">서초</li>
+					<li>송파</li>
+					<li>강동</li>
+					<li>관악</li>
+					<li class="na">도봉</li>
+					<li>강서</li>
+					<li class="under">분당</li>
+					<li class="under">인천</li>
+					<li class="last">수원</li>
+				</ul>
+			</li>
+			<li>강원도</li>
+			<li>충청도</li>
+			<li class="blue">전라도</li>
+			<li>경상도</li>
+			<li>제주도</li>
+		</ul>
+	</div>
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+		$("#seoul").next().css("color", "blue");
+		$("li").next(".blue").css("color", "blue");
+
+		$(".na").nextAll().css("color", "orange");
+
+		$(".na").nextUntil(".last", ".under").css("text-decoration", "underline");
+
+		$(".sib").siblings().css("font-weight", "bold");
+	</script>
+
+</body>
+</html>

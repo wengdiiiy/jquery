@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>트리 탐색 (상위/하위)</title>
+</head>
+<body>
+
+	<div>
+		<ul id="korea">
+			<li id="seoul">서울/경기
+				<ul>
+					<li>강남</li>
+					<li class="blue">서초</li>
+					<li class="orange">송파</li>
+					<li>분당
+						<ul class="prt">
+							<li class="prts">야탑역</li>
+							<li class="orange">이매역</li>
+							<li class="blue">서현역</li>
+							<li class="prtsu">수내역</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+			<li id="kangwon" style="position:relative">강원도
+				<ul>
+					<li class="sokcho">속초</li>
+					<li class="donghae">동해</li>
+				</ul>
+			</li>
+
+			<li>충청도</li>
+
+			<li>전라도</li>
+
+			<li>경상도</li>
+
+			<li>제주도</li>
+		</ul>
+	</div>
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+		$("#seoul>ul").children(".blue").css("color", "blue");
+
+		$("#seoul>ul").find(".orange").css("color", "orange");
+
+		$("ul.prt").parent().css("background-color", "#ddd");
+
+		$(".prts").parents("ul").css("border", "dotted red 1px");
+
+		$(".prts").closest("ul").css("border", "solid red 1px");
+
+		$(".prtsu").parentsUntil("#seoul", "li").css("background-color", "yellow");
+
+		console.log( $(".sokcho").offsetParent() );
+	</script>
+
+</body>
+</html>
