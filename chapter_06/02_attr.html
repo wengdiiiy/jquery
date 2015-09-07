@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>제어 2</title>
+	<style>
+		.red{color:red}
+		.blue{color:blue}
+	</style>
+</head>
+<body>
+
+	<input type="checkbox" checked>
+
+	<input type="text" value="인풋 텍스트">
+
+	<ul id="korea">
+		<li id="seoul">서울/경기
+			<ul>
+				<li>강남</li>
+				<li>서초</li>
+				<li>송파</li>
+				<li>분당
+					<ul>
+						<li>야탑역</li>
+						<li>이매역</li>
+						<li>서현역</li>
+						<li>수내역</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+
+		<li id="kangwon">강원도
+			<ul>
+				<li>속초</li>
+				<li>동해</li>
+			</ul>
+		</li>
+
+		<li id="ccd">충청도</li>
+
+		<li id="jrd">전라도</li>
+
+		<li id="ksd" class="blue">경상도</li>
+
+		<li id="jeju">제주도</li>
+	</ul>
+
+	<img src="img/image.jpg" alt="설명 텍스트" width="100" height="200">\
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+
+		$("img").attr("alt", "설명 텍스트 추가");
+
+		$("img").removeAttr("width");
+
+		$("#jeju").addClass("red");
+
+		$("#ksd").removeClass("blue");
+
+		$("#jrd").toggleClass("blue");
+
+		console.log( $("#ccd").hasClass("red"), $("#jeju").hasClass("red") );
+
+		console.log( $("input").attr("checked"), $("input").prop("checked") );
+
+		$("input").prop("checked", false);
+
+		$("input").removeProp("checked");
+
+		$("input").val("인풋 밸류");
+
+	</script>
+
+</body>
+</html>

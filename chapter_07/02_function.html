@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>함수</title>
+</head>
+<body>
+
+	<script>
+
+		function a() {
+			console.log("a함수 실행");
+		}
+		a();
+
+		var b = function() {
+			console.log("b함수 실행");
+		}
+		b();
+
+		(function() {
+			console.log("익명함수");
+		}());
+
+		function c(param1, param2) {
+			console.log(param1, param2, arguments.length);
+		}
+		c("인자1", "인자2");
+
+	</script>
+
+</body>
+</html>
