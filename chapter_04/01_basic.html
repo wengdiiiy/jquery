@@ -22,23 +22,23 @@
 
 	<script src="../javascript/jquery-2.1.4.js"></script>
 	<script>
-		$("*").hide();
+		console.log( $("*") );
 
-		$("html").show();
+		console.log( $("html") );
 
-		$("#wrap").show();
+		console.log( $("#wrap") );
 
-		$(".list").show();
+		console.log( $(".list") );
 
-		$("div ul>li").show();
+		console.log( $("div ul>li") );
 
-		$(".first ~ li").hide();
+		console.log( $("li + .middle") );
 
-		$("li + .middle").show();
+		console.log( $(".first ~ li") );
 
-		$("body, p").show();
+		console.log( $("body, p") );
 
-		$(".last", "ul").hide();
+		console.log( $(".last", "ul") );
 
 	</script>
 

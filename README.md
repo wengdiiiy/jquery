@@ -21,22 +21,28 @@
 	<li>
 		<h3>잘 하고 있는 걸까?</h3>
 		<ul>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/01_flow.html" target="_blank">예제 1</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/02_position.html" target="_blank">예제 2</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/03_ready.html" target="_blank">예제 3</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/04_load.html" target="_blank">예제 4</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/01_flow.html" target="_blank">스크립트 처리 순서</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/02_position.html" target="_blank">스크립트 사용 위치</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/03_ready.html" target="_blank">문서 준비 완료</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_03/04_load.html" target="_blank">윈도우 로드 완료</a></li>
 		</ul>
 	</li>
 	<li>
 		<h3>제이쿼리는 선택이 절반!</h3>
 		<ul>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_04/01_basic.html" target="_blank">예제 1</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_04/02_basic_filter.html" target="_blank">예제 2</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_04/03_etc.html" target="_blank">예제 3</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_04/01_basic.html" target="_blank">기본 선택</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_04/02_filter.html" target="_blank">필터 선택</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_04/03_etc.html" target="_blank">기타 선택</a></li>
 		</ul>
 	</li>
 	<li>
 		<h3>고급 진 선택.</h3>
+		<ul>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/01_tree_a.html" target="_blank">트리 탐색 (상위/하위)</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/02_tree_b.html" target="_blank">트리 탐색 (형제)</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/03_misc.html" target="_blank">트리 탐색 (기타)</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/03_filter.html" target="_blank">필터링</a></li>
+		</ul>
 	</li>
 	<li>
 		<h3>이제 제어를 해볼 차례.</h3>

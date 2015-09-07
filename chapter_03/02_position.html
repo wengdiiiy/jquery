@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<title>스크립트 사용 위치</title>
 
-	<script>console.log( "제이쿼리 로드전에 사용할 경우", $("span") );</script>
-	<script src="../javascript/jquery-2.1.4.js"></script>
-	<script>console.log( "헤드에서 바로 사용할 경우", $("span") );</script>
+	<script>console.log( "헤드 제이쿼리 로드 전" );</script>
+	<!--<script src="../javascript/jquery-2.1.4.js"></script>-->
+	<script>console.log( "헤드 제이쿼리 로드 후" );</script>
 
 </head>
 <body>
 
-	<span>Span Element</span>
-
-	<script>console.log( "바디 하단에서 사용할 경우", $("span") );</script>
+	<script>console.log( "바디 제이쿼리 로드 전" );</script>
+	<!--<script src="../javascript/jquery-2.1.4.js"></script>-->
+	<script>console.log( "바디 제이쿼리 로드 후" );</script>
 
 </body>
 </html>
