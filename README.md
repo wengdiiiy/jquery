@@ -46,9 +46,23 @@
 	</li>
 	<li>
 		<h3>이제 제어를 해볼 차례.</h3>
+		<ul>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_06/01_wrap.html" target="_blank">구조</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_06/02_attr.html" target="_blank">속성</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_06/03_insert.html" target="_blank">추가/이동</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_06/04_css.html" target="_blank">CSS</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_06/05_position.html" target="_blank">위치</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_06/06_size.html" target="_blank">기타</a></li>
+		</ul>
 	</li>
 	<li>
 		<h3>내 친구 자바스크립트 소환~</h3>
+		<ul>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/01_var.html" target="_blank">변수</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/02_function.html" target="_blank">함수</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/03_condition.html" target="_blank">조건문</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/04_repeat.html" target="_blank">반복문</a></li>
+		</ul>
 	</li>
 	<li>
 		<h3>뭔가 있어 보이게 만드는 애니메이션.</h3>
@@ -58,6 +72,13 @@
 	</li>
 	<li>
 		<h3>실전! 업무활용.</h3>
+		<ul>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/01_tooltip.html" target="_blank">툴팁</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/02_modal.html" target="_blank">모달</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/03_tab.html" target="_blank">탭</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/04_accordion.html" target="_blank">아코디언</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_07/05_carousel.html" target="_blank">캐러셀</a></li>
+		</ul>
 	</li>
 	<li>
 		<h3>다 차려놓은 밥상에 숟가락 얹기.</h3>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>캐러셀</title>
+
+	<style>
+		div{overflow:hidden;position:relative;width:300px;height:100px}
+		ul{position:absolute;margin:0;padding:0;width:500px;list-style:none;}
+		li{float:left;width:100px;height:100px;}
+	</style>
+
+</head>
+<body>
+
+	<div>
+		<ul>
+			<li style="background-color:red">red</li>
+			<li style="background-color:orange">orange</li>
+			<li style="background-color:yellow">yellow</li>
+			<li style="background-color:green">green</li>
+			<li style="background-color:blue">blue</li>
+			<li style="background-color:darkblue">darkblue</li>
+			<li style="background-color:purple">purple</li>
+		</ul>
+	</div>
+	<button id="left">left</button>
+	<button id="right">right</button>
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+		var $ul = $("ul");
+		var $rbtn = $("#right");
+		var $lbtn = $("#left");
+		var liWidth = $("li").outerWidth(true);
+		var animateTime = 300;
+		var moving = false;
+		var timer = setInterval(timerFunction, 2000);
+
+		function timerFunction(){
+			$rbtn.trigger("click");
+		}
+
+		function initFunction(){
+			clearInterval(timer);
+			moving = true;
+		}
+
+		function completeFunction(){
+			timer = setInterval(timerFunction, 2000);
+			moving = false;
+		}
+
+		$rbtn.on("click", function(){
+			if(moving == false){
+				initFunction();
+				$ul.animate({"left":"-=" + liWidth}, animateTime, function(){
+					$ul.append($(this).find("li:first-child")).css("left","0");
+					completeFunction();
+				});
+			}
+		});
+
+		$lbtn.on("click", function(){
+			if(moving == false){
+				initFunction();
+				$ul.prepend($ul.find("li:last-child")).css("left", -liWidth + "px").animate({"left":"+=" + liWidth}, animateTime, completeFunction);
+			}
+		});
+	</script>
+
+</body>
+</html>
