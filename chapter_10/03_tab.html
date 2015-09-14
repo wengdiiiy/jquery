@@ -2,70 +2,31 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>캐러셀</title>
-
+	<title>탭</title>
 	<style>
-		div{overflow:hidden;position:relative;width:300px;height:100px}
-		ul{position:absolute;margin:0;padding:0;width:500px;list-style:none;}
-		li{float:left;width:100px;height:100px;}
+		dd{margin:0}
+		dl{position:relative}
+		dt{float:left;padding:5px;border:solid 1px}
+		dt.active{background-color:yellow}
+		dd{display:none;position:absolute;top:50px;left:0;width:200px;height:100px;border:solid 1px}
+		dd.active{display:block}
 	</style>
-
 </head>
 <body>
+	<dl>
+		<dt class="active">탭 1</dt>
+		<dd class="active">내용 1</dd>
+		<dt>탭 2</dt>
+		<dd>내용 2</dd>
+		<dt>탭 3</dt>
+		<dd>내용 3</dd>
+	</dl>
 
-	<div>
-		<ul>
-			<li style="background-color:red">red</li>
-			<li style="background-color:orange">orange</li>
-			<li style="background-color:yellow">yellow</li>
-			<li style="background-color:green">green</li>
-			<li style="background-color:blue">blue</li>
-			<li style="background-color:darkblue">darkblue</li>
-			<li style="background-color:purple">purple</li>
-		</ul>
-	</div>
-	<button id="left">left</button>
-	<button id="right">right</button>
-
-	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-		var $ul = $("ul");
-		var $rbtn = $("#right");
-		var $lbtn = $("#left");
-		var liWidth = $("li").outerWidth(true);
-		var animateTime = 300;
-		var moving = false;
-		var timer = setInterval(timerFunction, 2000);
-
-		function timerFunction(){
-			$rbtn.trigger("click");
-		}
-
-		function initFunction(){
-			clearInterval(timer);
-			moving = true;
-		}
-
-		function completeFunction(){
-			timer = setInterval(timerFunction, 2000);
-			moving = false;
-		}
-
-		$rbtn.on("click", function(){
-			if(moving == false){
-				initFunction();
-				$ul.animate({"left":"-=" + liWidth}, animateTime, function(){
-					$ul.append($(this).find("li:first-child")).css("left","0");
-					completeFunction();
-				});
-			}
-		});
-
-		$lbtn.on("click", function(){
-			if(moving == false){
-				initFunction();
-				$ul.prepend($ul.find("li:last-child")).css("left", -liWidth + "px").animate({"left":"+=" + liWidth}, animateTime, completeFunction);
-			}
+		$("dt").on("click", function(){
+			var $select = $(this).next().addBack().addClass("active");
+			$("dl").children().not($select).removeClass("active");
 		});
 	</script>
 

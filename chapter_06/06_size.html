@@ -5,61 +5,36 @@
 	<title>기타</title>
 </head>
 <body>
-
-	<div data-role="article" data-options="{'name':'abc', 'age':'20'}">데이터</div>
-
 	<p>내용 1</p>
 	<p>내용 2</p>
-	<p id="idx">내용 3</p>
+	<p id="idx" data-name="세번째p">내용 3</p>
 	<p>내용 4</p>
 
-	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-
-		console.log( $("p").size(), $("p").length );
-
-		console.log( $("p").index( $("#idx") ) );
-
-		console.log( $("p").get(2), document.getElementById("idx"), $("p").get(2) == document.getElementById("idx") );
-
-		console.log( $("p").get(), $("p").toArray() );
-
-		$("div").data("show", true);
-
-		console.log( $("div").data(), $("div").data("role"), $("div").data("show") );
-
-		$("div").removeData("show");
-		$("div").removeData("role");
-
-		console.log( $("div").data(), $("div").data("role"), $("div").data("show") );
-
+		//console.log( $("p").size(), $("p").length );
+		//console.log( $("p").index( $("#idx") ) );
+		//console.log( $("p").get(2), document.getElementById("idx"));
+		//console.log( $("p").toArray(), $("p").get() );
+		//console.log( $("#idx").data("name") );
+		//$("#idx").data("status", "show");
+		//console.log( $("#idx").data("status") );
+		//$("#idx").removeData("status");
+		//console.log( $("#idx").data("status") );
+		/*
 		$("p").each(function(index, element){
 			console.log(index, element);
-
 			switch(index){
 				case 0: $(element).css("color", "red"); break;
 				case 1: $(element).css("color", "orange"); break;
 				case 2: $(element).css("color", "green"); break;
 				case 3: $(element).css("color", "blue");
 			}
-
-			if(index == 2){
+			if(index == 1){
 				$(this).css("text-decoration", "underline");
 			}
 		});
-
-		try{
-			$.noConflict();
-			$("p");
-		}catch(err){
-			console.log(err.message, jQuery("p"));
-		}
-
-		(function($){
-			console.log($);
-		}(jQuery));
-
+		*/
 	</script>
-
 </body>
 </html>

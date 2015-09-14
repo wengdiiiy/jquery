@@ -5,29 +5,25 @@
 	<title>함수</title>
 </head>
 <body>
-
 	<script>
-
 		function a() {
-			console.log("a함수 실행");
+			console.log("함수선언식");
 		}
 		a();
 
 		var b = function() {
-			console.log("b함수 실행");
+			console.log("함수표현식");
 		}
 		b();
 
 		(function() {
-			console.log("익명함수");
+			console.log("자체실행함수");
 		}());
 
 		function c(param1, param2) {
 			console.log(param1, param2, arguments.length);
 		}
 		c("인자1", "인자2");
-
 	</script>
-
 </body>
 </html>

@@ -2,72 +2,31 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>캐러셀</title>
-
+	<title>아코디언</title>
 	<style>
-		div{overflow:hidden;position:relative;width:300px;height:100px}
-		ul{position:absolute;margin:0;padding:0;width:500px;list-style:none;}
-		li{float:left;width:100px;height:100px;}
+		dt{background-color:#aaa}
+		dd{display:none;background-color:#ccc}
 	</style>
-
 </head>
 <body>
+	<dl>
+		<dt>제목 1</dt>
+		<dd>내용입니다.</dd>
+		<dt>제목 2</dt>
+		<dd>abcdefghijklmnopqrstuvwxyz</dd>
+		<dt>제목 3</dt>
+		<dd>0123456789</dd>
+	</dl>
 
-	<div>
-		<ul>
-			<li style="background-color:red">red</li>
-			<li style="background-color:orange">orange</li>
-			<li style="background-color:yellow">yellow</li>
-			<li style="background-color:green">green</li>
-			<li style="background-color:blue">blue</li>
-			<li style="background-color:darkblue">darkblue</li>
-			<li style="background-color:purple">purple</li>
-		</ul>
-	</div>
-	<button id="left">left</button>
-	<button id="right">right</button>
-
-	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-		var $ul = $("ul");
-		var $rbtn = $("#right");
-		var $lbtn = $("#left");
-		var liWidth = $("li").outerWidth(true);
-		var animateTime = 300;
-		var moving = false;
-		var timer = setInterval(timerFunction, 2000);
+		$("dt").on("click", function() {
+			//$(this).next().stop().slideToggle();
 
-		function timerFunction(){
-			$rbtn.trigger("click");
-		}
-
-		function initFunction(){
-			clearInterval(timer);
-			moving = true;
-		}
-
-		function completeFunction(){
-			timer = setInterval(timerFunction, 2000);
-			moving = false;
-		}
-
-		$rbtn.on("click", function(){
-			if(moving == false){
-				initFunction();
-				$ul.animate({"left":"-=" + liWidth}, animateTime, function(){
-					$ul.append($(this).find("li:first-child")).css("left","0");
-					completeFunction();
-				});
-			}
-		});
-
-		$lbtn.on("click", function(){
-			if(moving == false){
-				initFunction();
-				$ul.prepend($ul.find("li:last-child")).css("left", -liWidth + "px").animate({"left":"+=" + liWidth}, animateTime, completeFunction);
-			}
+			var $select = $(this).next();
+			$select.siblings("dd").stop().slideUp();
+			$select.stop().slideDown();
 		});
 	</script>
-
 </body>
 </html>

@@ -5,47 +5,26 @@
 	<title>위치</title>
 	<style>
 		html,body{margin:0}
-		#outer{position:relative; top:100px; left:150px; width:400px; height:300px; background-color:yellow}
+		#outer{position:relative; top:50px; left:100px; width:400px; height:300px; background-color:yellow}
 		#inner{position:absolute; top:50px; left:50px; width:300px; height:200px; background-color:orange}
-
-		#so{position:relative; top:300px; overflow:auto; width:300px; height:200px}
-		#si{width:400px; height:300px; background-color:gray}
 	</style>
 </head>
 <body>
+	<p>p</p>
 	<div id="outer">
 		<div id="inner">
 			내용
 		</div>
 	</div>
 
-	<div id="so">
-		<div id="si">
-			내용
-		</div>
-	</div>
-
-	<p>텍스트 1</p>
-	<p>텍스트 2</p>
-	<p>텍스트 3</p>
-
-	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-
-		$("#inner").text( "position.top:" + $("#inner").position().top + " / " + "position.left:" + $("#inner").position().left );
-
-		$("#inner").append("<br>").append( "offset.top:" + $("#inner").offset().top + " / " + "offset.left:" + $("#inner").offset().left );
-
-		console.log( $("#inner").offsetParent() );
-
-		$("#so").on("scroll", function(){
-			console.log( $("#so").scrollTop(), $("#so").scrollLeft() );
-		});
-
-		$("<span>리플레이스올</span>").replaceAll("p");
-
-		$("span").eq(0).replaceWith("<div>리플레이스위드</div>");
-
+		//$("#inner").text( "position.top:" + $("#inner").position().top + " / " + "position.left:" + $("#inner").position().left );
+		//$("#inner").append("<br>").append( "offset.top:" + $("#inner").offset().top + " / " + "offset.left:" + $("#inner").offset().left );
+		//console.log( $("#inner").offsetParent() );
+		//console.log( $(window).scrollTop(), $(window).scrollLeft() );
+		//$("p").replaceWith("<span>리플레이스위드</span>");
+		//$("<p>리플레이스올</p>").replaceAll("span");
 	</script>
 
 </body>

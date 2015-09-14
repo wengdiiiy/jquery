@@ -5,65 +5,23 @@
 	<title>추가/이동</title>
 </head>
 <body>
-	<ul id="korea">
-		<li id="seoul">서울/경기
-			<ul>
-				<li>강남</li>
-				<li>서초</li>
-				<li>송파</li>
-				<li>분당
-					<ul class="list">
-						<li>야탑역</li>
-						<li>이매역</li>
-						<li>서현역</li>
-						<li>수내역</li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-
-		<li id="kangwon">강원도
-			<ul>
-				<li>속초</li>
-				<li>동해</li>
-			</ul>
-		</li>
-
-		<li id="ccd">충청도</li>
-
-		<li id="jrd">전라도</li>
-
-		<li id="ksd">경상도</li>
-
-		<li id="jeju">제주도</li>
+	<ul>
+		<li class="first">목록 4</li>
+		<li class="last">목록 5</li>
 	</ul>
 
-	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-
-		$("#seoul>ul").append("<li>수원</li>");
-
-		$("#seoul>ul").prepend("<li>중랑</li>");
-
-		$("#korea").append( $("#seoul") );
-
-		$("#korea").prepend( $("#jeju") );
-
-		$("<li>정자역</li>").appendTo(".list");
-
-		$("<li/>").text("모란역").prependTo( $(".list") );
-
-		$("#kangwon").find("li").eq(0).after("<li>철원</li>");
-
-		$("#kangwon").find("li").eq(0).before( $("#kangwon").find("li").last() );
-
-		$("<li>인서트에프터</li>").insertAfter("#ksd");
-
-		$("<li>인서트비포어</li>").insertBefore("#ksd");
-
-		$("#jeju").clone().appendTo("#korea");
-
+		//$("ul").append("<li>목록 6</li>");
+		//$("<li>목록 7</li>").appendTo("ul");
+		//$("ul").prepend("<li>목록 3</li>");
+		//$("<li>목록 2</li>").prependTo("ul");
+		//$(".last").after("<li>목록 8</li>");
+		//$("<li>목록 9</li>").insertAfter(".last");
+		//$(".first").before("<li>목록 1</li>");
+		//$("<li>목록 0</li>").insertBefore(".first");
+		//$("ul").append( $(".first") );
+		//$("ul").append( $(".first").clone() );
 	</script>
-
 </body>
 </html>

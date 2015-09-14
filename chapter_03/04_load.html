@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>윈도우 로드 완료</title>
-
-	<script src="../javascript/jquery-2.1.4.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			console.log( "A", $("span") );
@@ -18,11 +16,8 @@
 
 </head>
 <body>
-
 	<span>Span Element</span>
-
 	<script>console.log( "C", $("span") );</script>
-
 	<script>
 		$(document).ready(function() {
 			console.log( "D", $("span") );
@@ -40,6 +35,5 @@
 			console.log( "G", $("span") );
 		}});
 	</script>
-
 </body>
 </html>

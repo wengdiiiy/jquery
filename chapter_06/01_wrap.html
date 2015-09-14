@@ -3,72 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>구조</title>
+	<style>
+		main,article,div,p{margin:0;padding:20px;border:dotted 1px;background-color:rgba(0,0,0,0.2)}
+	</style>
 </head>
 <body>
+	<article>
+		<div>
+			<p>p1</p>
+			<p>p2</p>
+		</div>
+	</article>
 
-	<ul id="korea">
-		<li id="seoul">서울/경기
-			<ul>
-				<li>강남</li>
-				<li>서초</li>
-				<li>송파</li>
-				<li>분당
-					<ul>
-						<li>야탑역</li>
-						<li>이매역</li>
-						<li>서현역</li>
-						<li>수내역</li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-
-		<li id="kangwon">강원도
-			<ul>
-				<li>속초</li>
-				<li>동해</li>
-			</ul>
-		</li>
-
-		<li id="ccd">충청도</li>
-
-		<li id="jrd">전라도</li>
-
-		<li id="ksd">경상도</li>
-
-		<li id="jeju">제주도</li>
-	</ul>
-
-	<div>
-		<p class="wap">123</p>
-		<p class="wap">456</p>
-		<p class="wap">789</p>
-	</div>
-
-	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-
-		$("#korea").wrap("<div></div>");
-
-		$("#korea").unwrap();
-
-		$(".wap").wrapAll("<div class='wadiv'></div>");
-
-		$("p").wrapInner("<strong/>");
-
-		$("#jeju").empty();
-
-		$("#ksd").remove();
-
-		$("#kangwon").detach();
-
-		$("<li id='kangwon'>강원도</li>").appendTo("#korea");
-
-		$("#jrd").text("전라남도");
-
-		$("#ccd").html("<span style='text-decoration:underline'>충청북도</span>");
-
+		//$("p").wrap("<div></div>");
+		//$("p").wrapAll("<div/>");
+		//$("div").wrapInner("<div/>")
+		//$("p").unwrap();
+		//$("p").empty();
+		//$("p").remove();
+		//$("p").detach();
+		//$("p").text("paragraph");
+		//$("div").html("<p style='font-weight:bold'>ppp</p>");
 	</script>
-
 </body>
 </html>
