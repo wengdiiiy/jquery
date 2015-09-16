@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>마우스 이벤트</title>
+	<style>
+		.outer{width:300px;height:200px;background-color:#aaa}
+		.inner{margin:auto;width:200px;height:100px;background-color:#ccc}
+	</style>
+</head>
+<body>
+	<button id="click">클릭</button>
+	<button id="dblclick">더블클릭</button>
+	<div class="outer">outer
+		<div class="inner">inner</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		/*
+		$("#click").click(function() {
+			console.log("클릭");
+		});
+		*/
+
+		/*
+		$("#dblclick").dblclick(function() {
+			console.log("더블클릭");
+		});
+		*/
+
+		/*
+		$(".outer")
+			.mouseenter(function() {
+				console.log("아우터 [ 마우스엔터 ]");
+			}).mouseleave(function() {
+				console.log("아우터 [ 마우스리브 ]");
+			});
+		*/
+
+		/*
+		$(".outer")
+			.mouseover(function() {
+				console.log("마우스오버");
+			}).mouseout(function() {
+				console.log("마우스아웃");
+			});
+		*/
+
+		/*
+		$(".outer").hover(function() {
+			console.log("인");
+		}, function() {
+			console.log("아웃");
+		});
+		*/
+
+		/*
+		$(".outer").mousemove(function() {
+			console.log("무브");
+		});
+		*/
+
+		/*
+		$(".outer").mousedown(function() {
+			console.log("다운");
+		});
+		*/
+
+		/*
+		$(".outer").mouseup(function() {
+			console.log("업");
+		});
+		*/
+	</script>
+</body>
+</html>
