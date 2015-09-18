@@ -74,11 +74,11 @@
 	<li>
 		<h4>특정상황에서만 동작하도록 제한.</h4>
 		<ul>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_08/01_status.html" target="_blank">상태 이벤트</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_08/02_mouse.html" target="_blank">마우스 이벤트</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_08/03_focus.html" target="_blank">포커스/키보드 이벤트</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_08/04_bind.html" target="_blank">이벤트 연결</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_08/05_event.html" target="_blank">이벤트 데이터</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_09/01_status.html" target="_blank">상태 이벤트</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_09/02_mouse.html" target="_blank">마우스 이벤트</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_09/03_focus.html" target="_blank">포커스/키보드 이벤트</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_09/04_bind.html" target="_blank">이벤트 연결</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_09/05_event.html" target="_blank">이벤트 데이터</a></li>
 		</ul>
 	</li>
 	<li>
