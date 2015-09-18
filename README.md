@@ -40,8 +40,8 @@
 		<ul>
 			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/01_tree_a.html" target="_blank">트리 탐색 (상위/하위)</a></li>
 			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/02_tree_b.html" target="_blank">트리 탐색 (형제)</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/04_filter.html" target="_blank">필터링</a></li>
-			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/03_misc.html" target="_blank">기타</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/03_filter.html" target="_blank">필터링</a></li>
+			<li><a href="https://github.com/nts-learning/jquery/blob/master/chapter_05/04_misc.html" target="_blank">기타</a></li>
 		</ul>
 	</li>
 	<li>
