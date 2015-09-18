@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>트리 탐색 (기타)</title>
+</head>
+<body>
+	<ul id="seoul">서울
+		<li>강남</li>
+		<li class="seocho">서초</li>
+		<li>송파</li>
+		<li>강동</li>
+		<li>관악</li>
+		<li class="dobong">도봉</li>
+		<li>강서</li>
+	</ul>
+	<iframe id="ifm" src="../chapter_04/01_basic.html"></iframe>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $(".seocho").add(".dobong") );
+		//console.log( $("#seoul").find(".dobong").addBack() );
+		//console.log( $("#seoul").find(".dobong").andSelf() );
+		//console.log( $("#ifm").contents(), $("#ifm").children() );
+		//$("#ifm").load(function(){ console.log( $(this).contents().find(".first") ); });
+		//console.log( $("#seoul").find(".seocho").end() );
+		//console.log( $(".dobong").parent().is("#seoul") );
+	</script>
+</body>
+</html>

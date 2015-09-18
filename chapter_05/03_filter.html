@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>필터링</title>
+</head>
+<body>
+	<ul id="seoul">서울
+		<li>강남</li>
+		<li>서초</li>
+		<li class="select">송파</li>
+		<li>강동</li>
+		<li class="select"><b>관악</b></li>
+		<li class="select">도봉</li>
+		<li class="select"><b>강서</b></li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $("#seoul").find("li").eq(1) );
+		//console.log( $("#seoul").find("li").eq(-1) );
+		//console.log( $("#seoul").find("li").filter(".select") );
+		//console.log( $("#seoul").find("li").not(".select") );
+		//console.log( $(".select").first() );
+		//console.log( $(".select").last() );
+		//console.log( $("#seoul").find("li").has("b") );
+		//console.log( $("#seoul").find("li").slice(1,5) );
+		//$("#seoul").find("li").map(function(i, e){ console.log(i, e); });
+	</script>
+</body>
+</html>

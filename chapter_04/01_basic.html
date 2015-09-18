@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>기본 선택</title>
+</head>
+<body>
+	<div id="wrap">
+		<ul class="list">
+			<li class="first">목록 1</li>
+			<li class="second">목록 2</li>
+			<li class="middle">목록 3</li>
+			<li class="fourth">목록 4</li>
+			<li class="last">목록 5</li>
+		</ul>
+		<p>문단</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $("*") );
+		//console.log( $("html") );
+		//console.log( $("#wrap") );
+		//console.log( $(".list") );
+		//console.log( $("div ul>li") );
+		//console.log( $(".second + .middle") );
+		//console.log( $(".middle ~ li") );
+		//console.log( $("body, p") );
+		//console.log( $(".last", "ul") );
+	</script>
+</body>
+</html>

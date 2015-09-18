@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>툴팁</title>
+	<style>
+		a{display:inline-block;width:150px;vertical-align:top;background-color:#eee;text-decoration:none;color:black}
+		span{background-color:#ccc}
+		.css-tt span{display:none}
+		.css-tt:hover span, .css-tt:focus span{display:inline-block}
+	</style>
+</head>
+<body>
+	<a href="#" class="css-tt">
+		우리 집에는 매일 나 홀로 있었지
+		아버지는 택시드라이버 어디냐고 여쭤보면 항상
+		양화대교
+		<span>양화대교 - 자이언티</span>
+	</a>
+	<a href="#" class="js-tt" data-tooltip="I'm so sexy - 댄싱게놈">
+		아무도 모르는 숨겨둔 비밀을 너에게만 말해 줄게 (So Sexy)
+		겉으로 보면은 상상도 못하는 내 모습을 보여 줄게 (Umm So Sexy)
+	</a>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		var $target = $(".js-tt");
+		var $tt = $("<span style='position:absolute'></span>").text( $target.data("tooltip"));
+		$target.on({
+			"mouseenter": function() {
+				$tt.appendTo("body");
+			},
+			"mousemove": function(e) {
+				$tt.css({"top": e.pageY + 20, "left": e.pageX + 10});
+			},
+			"mouseleave": function() {
+				$tt.remove();
+			}
+		});
+	</script>
+</body>
+</html>

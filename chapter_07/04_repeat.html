@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>반복문</title>
+</head>
+<body>
+	<ul></ul>
+
+	<script src="../javascript/jquery-2.1.4.js"></script>
+	<script>
+		for(var i=0; i<3; i++){
+			$("ul").append("<li>" + i + "</li>");
+		}
+
+		var a = [13, 28, 31, 49];
+		for(var i=a.length - 1; i>=0; i--){
+			console.log( a[i] );
+		}
+	</script>
+</body>
+</html>

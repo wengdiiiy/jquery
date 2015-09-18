@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>상태 이벤트</title>
+	<style>
+		body{height:3000px}
+	</style>
+</head>
+<body>
+	<img>
+	<form>
+		<input type="text" value="ttt">
+		<input type="submit">
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			console.log("문서 준비 완료");
+		});
+
+		/*
+		$(window).load(function() {
+			console.log("윈도우 로드 완료");
+		});
+		*/
+
+		/*
+		$("img")
+			.attr("src", "http://img.naver.net/static/www/img/btn_search.png")
+			//.load(function() {
+			//	console.log("이미지 로드 완료");
+			//})
+			//.error(function(){
+			//	console.log("이미지 로드 실패");
+			//});
+		*/
+
+		/*
+		$("input[type='text']")
+			.select(function() {
+				console.log("대상 선택됨");
+			})
+			.change(function() {
+				console.log("대상 변경됨");
+			});
+		*/
+
+		/*
+		$("form").submit(function(e) {
+			e.preventDefault();
+			console.log("전송");
+		});
+		*/
+
+		/*
+		$(window).resize(function() {
+			console.log("리사이즈");
+		});
+		*/
+
+		/*
+		$(window).scroll(function() {
+			console.log("스크롤");
+		});
+		*/
+	</script>
+</body>
+</html>

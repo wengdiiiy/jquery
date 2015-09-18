@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>트리 탐색 (상위/하위)</title>
+</head>
+<body>
+	<ul id="korea" style="position:relative">
+		<li class="seoul">서울
+			<ul>
+				<li class="seocho">서초</li>
+			</ul>
+		</li>
+		<li class="kangwon">강원도</li>
+	</ul>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $("#korea").children(".kangwon") );
+		//console.log( $("#korea").find(".seocho") );
+		//console.log( $(".seocho").parent() );
+		//console.log( $(".seocho").parents("ul") );
+		//console.log( $(".seocho").closest("ul") );
+		//console.log( $(".seocho").parentsUntil("#korea", "ul") );
+		//console.log( $(".kangwon").offsetParent() );
+	</script>
+	<!-- https://learn.jquery.com/performance/optimize-selectors/ -->
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>기타 선택</title>
+</head>
+<body>
+	<ul>
+		<li>목록 <b>1</b></li>
+		<li>목록 2</li>
+		<li>목록 3</li>
+		<li></li>
+		<li style="display:none">목록 5</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $("li:contains('목록 3')") );
+		//console.log( $("li:empty") );
+		//console.log( $("li:parent") );
+		//console.log( $("li:has(b)") );
+		//console.log( $("li:visible") );
+		//console.log( $("li:hidden") );
+	</script>
+</body>
+</html>

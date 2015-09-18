@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>아코디언</title>
+	<style>
+		dt{background-color:#aaa}
+		dd{display:none;background-color:#ccc}
+	</style>
+</head>
+<body>
+	<dl>
+		<dt>제목 1</dt>
+		<dd>내용입니다.</dd>
+		<dt>제목 2</dt>
+		<dd>abcdefghijklmnopqrstuvwxyz</dd>
+		<dt>제목 3</dt>
+		<dd>0123456789</dd>
+	</dl>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$("dt").on("click", function() {
+			//$(this).next().stop().slideToggle();
+
+			var $select = $(this).next();
+			$select.siblings("dd").stop().slideUp();
+			$select.stop().slideDown();
+		});
+	</script>
+</body>
+</html>

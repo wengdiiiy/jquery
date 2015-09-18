@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>트리 탐색 (형제)</title>
+</head>
+<body>
+	<ul>
+		<li>강남</li>
+		<li class="songpa">송파</li>
+		<li>강동</li>
+		<li class="bundang">분당</li>
+		<li>인천</li>
+		<li>수원</li>
+	</ul>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $(".songpa").next() );
+		//console.log( $(".bundang").nextAll() );
+		//console.log( $(".songpa").nextUntil(".bundang") );
+		//console.log( $(".bundang").siblings() );
+	</script>
+</body>
+</html>

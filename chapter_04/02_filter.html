@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>필터 선택</title>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>목록 1</li>
+			<li>목록 2</li>
+			<li>목록 3</li>
+			<li>목록 4</li>
+			<li class="last">목록 5</li>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( $("li:eq(1)") );
+		//console.log( $("li:eq(-1)") );
+		//console.log( $("li:even") );
+		//console.log( $("li:gt(2)") );
+		//console.log( $("li:not(:last)") );
+	</script>
+</body>
+</html>
