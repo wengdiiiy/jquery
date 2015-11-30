@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>문서준비완료 / 윈도우로드완료</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		console.log( "S-1", $("span") );
+
+		$(document).on("ready", function() {
+			console.log( "R-1", $("span") );
+		});
+
+		$(document).on({ready: function() {
+			console.log( "R-2", $("span") );
+		}});
+
+		$(document).ready(function() {
+			console.log( "R-3", $("span") );
+		});
+
+		$(function() {
+			console.log( "R-4", $("span") );
+		});
+
+		$(window).on("load", function() {
+			console.log( "L-1", $("span") );
+		});
+
+		$(window).on({load: function() {
+			console.log( "L-2", $("span") );
+		}});
+
+		$(window).load(function() {
+			console.log( "L-3", $("span") );
+		});
+	</script>
+</head>
+<body>
+	<span>Span Element</span>
+
+	<script>console.log( "S-2", $("span") );</script>
+</body>
+</html>

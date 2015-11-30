@@ -5,7 +5,7 @@
 	<title>필터링</title>
 </head>
 <body>
-	<ul id="seoul">서울
+	<ul>
 		<li>강남</li>
 		<li>서초</li>
 		<li class="select">송파</li>
@@ -17,15 +17,14 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
-		console.log( $("#seoul").find("li").eq(1) );
-		//console.log( $("#seoul").find("li").eq(-1) );
-		//console.log( $("#seoul").find("li").filter(".select") );
-		//console.log( $("#seoul").find("li").not(".select") );
+		console.log( $("li").eq(1) );
+		//console.log( $("li").eq(-1) );
+		//console.log( $("li").filter(".select") );
+		//console.log( $("li").not(".select") );
 		//console.log( $(".select").first() );
 		//console.log( $(".select").last() );
-		//console.log( $("#seoul").find("li").has("b") );
-		//console.log( $("#seoul").find("li").slice(1,5) );
-		//$("#seoul").find("li").map(function(i, e){ console.log(i, e); });
+		//console.log( $("li").has("b") );
+		//console.log( $("li").slice(1,5) );
 	</script>
 </body>
 </html>

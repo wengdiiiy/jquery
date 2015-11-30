@@ -2,13 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>애니메이션 기본</title>
+	<title>애니메이션 타임라인</title>
 	<style>
 		div{width:300px;height:100px;border:solid 1px black;background-color:#aaa}
 	</style>
 </head>
 <body>
-	<div id="t1" style="display:none">테스트 영역 1</div>
+	<div id="t1">테스트 영역 1</div>
 	<div id="t2">테스트 영역 2</div>
 	<div id="t3">테스트 영역 3</div>
 	<div id="t4">테스트 영역 4</div>
@@ -16,20 +16,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
 		/*
-		$("#t1").show("slow", function() {
-			$("#t1, #t2").toggle();
-		});
-		*/
-
-		//$("#t3").fadeOut().fadeIn().fadeToggle();
-
-		/*
 		$("#t4").animate({width: 500, height: 200}, {
 			duration: 5000, complete: function() {
 				$( this ).text("테스트 영역 4 (완료)");
 			}
 		});
 		*/
+
+		//$("#t4").fadeOut().delay(1000).fadeIn();
+
+		//$("#t3").stop().slideUp(5000);
 	</script>
 </body>
 </html>
