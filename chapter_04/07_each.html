@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CDN을 통한 제이쿼리 로드</title>
+    <style type="text/css">
+        a{display:block;width:50px;height:50px;border:1px solid #000;line-height:30px}
+        ul li~li{overflow:hidden;margin-left:10px}
+        ul li{float:left;list-style-type:none}
+        ul li.on{background-color:#FF0000}
+    </style>
+</head>
+<body>
+    <ul>
+    <li class="on">
+        <a href="#">1</a>
+    </li>
+    <li>
+        <a href="#">2</a>
+    </li>
+    <li>
+        <a href="#">3</a>
+    </li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type=text/javascript>
+        $("a").click(function(e){
+            console.log(this);
+        });
+        
+        $("a").each(function(n){
+            $(this).on("click", function(e){
+                var elements = $(this).parent().siblings();
+
+                $(this).animate({"width":"100px"})
+                        .parent().addClass("on")
+                        .siblings().removeClass("on")
+                        .find("a").animate({"width":"50px"});
+
+                elements.each(function(index){
+                    elements.eq(index).removeClass("on");
+                });
+                
+                $(this).parent().addClass("on");
+            });
+        });
+	</script>
+</body>
+</html>

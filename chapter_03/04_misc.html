@@ -18,13 +18,15 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
+        
+        //jquery성능관련 : http://learn.jquery.com/performance/optimize-selectors/
 		console.log( $(".seocho").add(".dobong") );
-		//console.log( $("#seoul").find(".dobong").addBack() );
-		//console.log( $("#seoul").find(".dobong").andSelf() );
-		//console.log( $("#seoul").find(".seocho").end() );
-		//console.log( $("#ifm").contents().find("p") );
-		//$("#ifm").load(function(){ console.log( $(this).contents().find("p") ); });
-		//console.log( $(".dobong").parent().is("#seoul") );
+		console.log( $("#seoul").find(".dobong").addBack() );
+		console.log( $("#seoul").find(".dobong").andSelf() );
+		console.log( $("#seoul").find(".seocho").end() );
+		console.log( $("#ifm").contents().find("p") );
+		$("#ifm").load(function(){ console.log( $(this).contents().find("p") ); });
+		console.log( $(".dobong").parent().is("#seoul") );
 	</script>
 </body>
 </html>

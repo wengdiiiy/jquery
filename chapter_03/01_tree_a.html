@@ -14,19 +14,23 @@
 					</ul>
 				</li>
 				<li class="kangwon">강원도</li>
+                <li class="kangwon">강원도2</li>
 			</ul>
 		</li>
 	</ul>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script>
+        //                                   자식              부모
+        //$("#korea").children(".kangwon").css(색바꿈).end().css(색바꿈);
+        //chain개념으로 서로 왔다 갔다~~~
 		console.log( $("#korea").children(".kangwon") );
-		//console.log( $("#korea").find(".seocho") );
-		//console.log( $(".seocho").parent() );
-		//console.log( $(".seocho").parents("ul") );
-		//console.log( $(".seocho").closest("ul") );
-		//console.log( $(".seocho").parentsUntil("#top", "ul") );
-		//console.log( $(".kangwon").offsetParent() );
+		console.log( $("#korea").find(".seocho") );
+		console.log( $(".seocho").parent() );
+		console.log( $(".seocho").parents("ul") );
+		console.log( $(".seocho").closest("ul") );
+		console.log( $(".seocho").parentsUntil("#top", "ul") );
+		console.log( $(".kangwon").offsetParent() );
 	</script>
 	<!-- https://learn.jquery.com/performance/optimize-selectors/ -->
 </body>
